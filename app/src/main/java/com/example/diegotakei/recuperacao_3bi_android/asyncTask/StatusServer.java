@@ -11,7 +11,6 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.io.IOException;
-import java.net.HttpURLConnection;
 
 /**
  * Created by Diego Takei on 05/02/2016.
@@ -44,7 +43,7 @@ public class StatusServer extends AsyncTask<JSONObject, Void, Response> {
 
             int status = response.getStatusCodeHttp();
 
-            if (status == HttpURLConnection.HTTP_OK) {
+            if (status == 201) {
 
                 JSONObject json = new JSONObject(response.getContentValue());
 

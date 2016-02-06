@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+import android.util.Log;
 
 import com.example.diegotakei.recuperacao_3bi_android.R;
 import com.example.diegotakei.recuperacao_3bi_android.asyncTask.StatusServer;
@@ -36,7 +37,7 @@ public class SplashActivity extends Activity implements Runnable {
         if (statusServer == true) {
             startActivity(new Intent(SplashActivity.this, MainActivity.class));
         }
-
+        Log.e("valor", "server "+ statusServer);
         finish();
 
     }
