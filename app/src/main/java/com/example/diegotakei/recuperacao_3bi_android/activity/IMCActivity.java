@@ -19,7 +19,7 @@ public class IMCActivity extends Activity {
 
         setContentView(R.layout.activity_imc);
 
-        Button enviar = (Button) findViewById(R.id.buttonEnviar);
+        Button enviar = (Button) findViewById(R.id.buttonEnviarIMC);
 
         enviar.setOnClickListener(new IMCListener());
 

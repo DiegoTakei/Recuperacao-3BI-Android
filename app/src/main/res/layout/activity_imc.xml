@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_margin="50px"
     android:layout_height="match_parent"
     android:weightSum="1">
 
@@ -12,35 +13,43 @@
         android:id="@+id/calculoIMC"
         android:layout_gravity="center_horizontal" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Insira seu peso"
-        android:id="@+id/TextViewPeso" />
-
-    <EditText
+    <LinearLayout
+        android:orientation="vertical"
         android:layout_width="match_parent"
+        android:layout_marginTop="50px"
         android:layout_height="wrap_content"
-        android:id="@+id/editTextPeso" />
+        android:layout_gravity="center_horizontal">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Insira sua altura"
-        android:id="@+id/textViewAltura" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Insira seu peso"
+            android:id="@+id/TextViewPeso" />
 
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/editTextAltura" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editTextPeso" />
 
-    <Button
-        android:layout_width="166dp"
-        android:layout_height="wrap_content"
-        android:text="Enviar"
-        android:id="@+id/buttonEnviar"
-        android:layout_gravity="center_horizontal" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Insira sua altura"
+            android:id="@+id/textViewAltura" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editTextAltura" />
+
+        <Button
+            android:layout_width="166dp"
+            android:layout_height="wrap_content"
+            android:text="Enviar"
+            android:id="@+id/buttonEnviarIMC"
+            android:layout_gravity="center_horizontal" />
+    </LinearLayout>
 
 </LinearLayout>

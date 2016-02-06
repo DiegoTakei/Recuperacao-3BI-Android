@@ -1,5 +1,6 @@
 package com.example.diegotakei.recuperacao_3bi_android.activity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -8,6 +9,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Button;
 
 import com.example.diegotakei.recuperacao_3bi_android.R;
 
@@ -17,17 +19,43 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
+        // BUTTON IMC
+        Button IMCButton = (Button) findViewById(R.id.imc_button);
+        IMCButton.setOnClickListener(new View.OnClickListener() {
+
             @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+            public void onClick(View v) {
+                Intent imcIntent = new Intent(MainActivity.this, IMCActivity.class);
+                startActivity(imcIntent);
+
             }
         });
+
+        // BUTTON VCT
+        Button VCTButton = (Button) findViewById(R.id.vct_button);
+        VCTButton.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                Intent vctIntent = new Intent(MainActivity.this, VCTActivity.class);
+                startActivity(vctIntent);
+
+            }
+        });
+
+        // BUTTON PA
+        Button PAButton = (Button) findViewById(R.id.pa_button);
+        PAButton.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                Intent paIntent = new Intent(MainActivity.this, PAActivity.class);
+                startActivity(paIntent);
+
+            }
+        });
+
     }
 
     @Override
