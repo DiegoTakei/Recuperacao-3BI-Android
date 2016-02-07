@@ -78,8 +78,8 @@ public class VCTActivity extends Activity {
 
                             geral.put("entrevistado", entrevistado);
 
-                            VCTAsyncTask VCTAsyncTask = new VCTAsyncTask(v.getContext());
-                            VCTAsyncTask.execute(geral);
+                            VCTAsyncTask vctAsyncTask = new VCTAsyncTask(v.getContext());
+                            vctAsyncTask.execute(geral);
 
                         } catch (JSONException e) {
                             e.printStackTrace();

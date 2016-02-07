@@ -5,7 +5,7 @@ import android.content.Intent;
 import android.os.AsyncTask;
 import android.util.Log;
 
-import com.example.diegotakei.recuperacao_3bi_android.activity.MainActivity;
+import com.example.diegotakei.recuperacao_3bi_android.activity.LoginActivity;
 import com.example.diegotakei.recuperacao_3bi_android.util.HttpService;
 import com.example.diegotakei.recuperacao_3bi_android.util.Response;
 
@@ -56,7 +56,7 @@ public class StatusServer extends AsyncTask<JSONObject, Void, Response> {
                 Boolean statusServer = json.getBoolean("online");
 
                 if(statusServer){
-                    Intent intent = new Intent(activity, MainActivity.class);
+                    Intent intent = new Intent(activity, LoginActivity.class);
                     activity.startActivity(intent);
                     activity.finish();
                 }

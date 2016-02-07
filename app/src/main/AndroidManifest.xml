@@ -21,9 +21,10 @@
         </activity>
 
         <activity
-            android:name=".activity.MainActivity"
+            android:name=".activity.LoginActivity"
             android:label="@string/app_name" />
 
+        <activity android:name=".activity.MainActivity" />
         <activity android:name=".activity.IMCActivity" />
         <activity android:name=".activity.PAActivity" />
         <activity android:name=".activity.VCTActivity"></activity>
