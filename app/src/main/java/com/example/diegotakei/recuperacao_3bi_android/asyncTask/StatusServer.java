@@ -46,10 +46,10 @@ public class StatusServer extends AsyncTask<JSONObject, Void, Response> {
 
         try {
 
-            int status1;
-            status1 = response.getStatusCodeHttp();
+            int status;
+            status = response.getStatusCodeHttp();
 
-            if (status1 == 201) {
+            if (status == 201) {
 
                 JSONObject json = new JSONObject(response.getContentValue());
 

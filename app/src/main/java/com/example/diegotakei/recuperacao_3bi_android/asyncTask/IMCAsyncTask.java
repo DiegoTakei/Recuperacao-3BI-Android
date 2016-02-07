@@ -53,7 +53,7 @@ public class IMCAsyncTask extends AsyncTask<JSONObject, Void, Response> {
                 JSONObject json = new JSONObject(response.getContentValue());
 
                 String valor = json.getString("valor");
-                Toast.makeText(context, valor, Toast.LENGTH_LONG).show();
+                Toast.makeText(context, "Seu Índice de Massa Corporal é: "+valor, Toast.LENGTH_LONG).show();
             }
 
         } catch (JSONException e) {
