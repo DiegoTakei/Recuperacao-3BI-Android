@@ -3,7 +3,8 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_margin="50px"
     android:layout_height="match_parent"
-    android:weightSum="1">
+    android:weightSum="1"
+    android:nestedScrollingEnabled="true">
 
     <TextView
         android:layout_width="wrap_content"
@@ -30,7 +31,7 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/editTextPeso" />
+            android:id="@+id/edt_imc_peso"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -42,13 +43,13 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/editTextAltura" />
+            android:id="@+id/edt_imc_altura" />
 
         <Button
-            android:layout_width="166dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Enviar"
-            android:id="@+id/buttonEnviarIMC"
+            android:text="@string/enviar"
+            android:id="@+id/btn_imc_enviar"
             android:layout_gravity="center_horizontal" />
     </LinearLayout>
 

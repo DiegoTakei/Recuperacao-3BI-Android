@@ -1,5 +1,6 @@
 package com.example.diegotakei.recuperacao_3bi_android.listener;
 
+import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 
@@ -20,15 +21,16 @@ public class IMCListener implements View.OnClickListener {
         JSONObject geral = new JSONObject();
 
         try {
-            // Peso
-            EditText pesoEditText = (EditText) v.findViewById(R.id.editTextPeso);
-            String peso = pesoEditText.getText().toString();
-            geral.put("peso", peso);
 
             // Altura
-            EditText alturaEditText = (EditText) v.findViewById(R.id.editTextAltura);
+            EditText alturaEditText = (EditText) v.findViewById(R.id.edt_imc_altura);
             String altura = alturaEditText.getText().toString();
             geral.put("altura", altura);
+
+            // Peso
+            EditText pesoEditText = (EditText) v.findViewById(R.id.edt_imc_peso);
+            String peso = pesoEditText.getText().toString();
+            geral.put("peso", peso);
 
             IMCAsyncTask calcularIMCAsyncTask = new IMCAsyncTask(v.getContext());
             calcularIMCAsyncTask.execute(geral);

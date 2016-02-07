@@ -8,9 +8,10 @@
     <string name="peso">Peso</string>
     <string name="altura">Altura</string>
     <string name="nivel_esporte">Nível Esporte</string>
-    <string name="nascimento">Nascimento</string>
+    <string name="nascimento">Data de nascimento</string>
     <string name="sexo">Sexo</string>
     <string name="enviar">Enviar</string>
     <string name="lbl_pa_title">Perfil Antropométrico</string>
     <string name="vct_title">Cálculo VCT</string>
+    <string name="carregando">Carregando...</string>
 </resources>
