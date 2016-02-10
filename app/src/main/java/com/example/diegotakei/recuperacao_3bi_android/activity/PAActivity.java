@@ -1,6 +1,6 @@
 package com.example.diegotakei.recuperacao_3bi_android.activity;
 
-import android.support.v7.app.AppCompatActivity;
+import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
@@ -14,7 +14,7 @@ import com.example.diegotakei.recuperacao_3bi_android.asyncTask.PAAsyncTask;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-public class PAActivity extends AppCompatActivity {
+public class PAActivity extends Activity {
 
     private Spinner spnSexo;
     private ArrayAdapter<String> spnAdapter;
