@@ -55,7 +55,6 @@ public class LoginAsyncTask extends AsyncTask<JSONObject, Void, Response> {
                 JSONObject json = new JSONObject(response.getContentValue());
                 String codigo = json.getString("codigo");
                 String nome = json.getString("nome");
-                String apikey = json.getString("apikey");
 
                 Toast.makeText(activity,nome+" está logado no sistema", Toast.LENGTH_LONG).show();
 
