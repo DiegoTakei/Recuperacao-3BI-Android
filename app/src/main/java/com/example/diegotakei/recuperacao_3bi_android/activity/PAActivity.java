@@ -29,14 +29,14 @@ public class PAActivity extends Activity {
         spnAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item);
         spnAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 
-        spnSexo = (Spinner) findViewById(R.id.spn_vct_sexo);
+        spnSexo = (Spinner) findViewById(R.id.spn_pa_sexo);
         spnSexo.setAdapter(spnAdapter);
 
         spnAdapter.add("Masculino");
         spnAdapter.add("Feminino");
 
 
-        Button enviar = (Button) findViewById(R.id.btn_vct_enviar);
+        Button enviar = (Button) findViewById(R.id.btn_pa_enviar);
 
         enviar.setOnClickListener(
                 new View.OnClickListener() {
@@ -48,12 +48,12 @@ public class PAActivity extends Activity {
                         try {
 
                             // Altura
-                            EditText alturaEditText = (EditText) findViewById(R.id.edt_vct_altura);
+                            EditText alturaEditText = (EditText) findViewById(R.id.edt_pa_altura);
                             String altura = alturaEditText.getText().toString();
                             geral.put("altura", altura);
 
                             // Peso
-                            EditText pesoEditText = (EditText) findViewById(R.id.edt_vct_peso);
+                            EditText pesoEditText = (EditText) findViewById(R.id.edt_pa_peso);
                             String peso = pesoEditText.getText().toString();
                             geral.put("peso", peso);
 
@@ -66,7 +66,7 @@ public class PAActivity extends Activity {
                             }
 
                             //Data de Nascimento
-                            EditText nascimentoEditText = (EditText) findViewById(R.id.edt_vct_data_nascimento);
+                            EditText nascimentoEditText = (EditText) findViewById(R.id.edt_pa_data_nascimento);
                             String nascimento = nascimentoEditText.getText().toString();
 
                             entrevistado.put("nascimento", nascimento);

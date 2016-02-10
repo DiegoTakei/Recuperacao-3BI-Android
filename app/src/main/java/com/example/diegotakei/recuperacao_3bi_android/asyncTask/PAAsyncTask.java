@@ -52,9 +52,12 @@ public class PAAsyncTask extends AsyncTask<JSONObject, Void, Response>{
 
                     JSONObject json = new JSONObject(response.getContentValue());
 
-                    String valor = json.getString("valor");
+                    JSONObject jsonImc = json.getJSONObject("imc");
 
-                    Toast.makeText(context, "Seu Perfil Antropométrico é: " + valor, Toast.LENGTH_LONG).show();
+                    String valor = jsonImc.getString("valor");
+                    String diagnostico = json.getString("diagnostico");
+
+                    Toast.makeText(context, "Seu IMC é: " + valor + ". " + diagnostico, Toast.LENGTH_LONG).show();
                 }
 
             } catch (JSONException e) {
