@@ -44,7 +44,7 @@
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="NutrIF"
+            android:text="Opining"
             android:id="@+id/textView2"
             android:layout_column="0"
             android:layout_span="2" />
